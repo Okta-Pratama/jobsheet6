@@ -36,6 +36,7 @@ public class Pemilihan2Percobaan2_22 {
             System.out.println("Harga bundling = Rp " + harga);
         } else {
             System.out.println("Masukkan pilihan menu dengan benar");
+            sc.close();
             return;
         }
         
@@ -44,6 +45,7 @@ public class Pemilihan2Percobaan2_22 {
             System.out.println("Besar diskon = 10%");
         } else if (!member.equalsIgnoreCase("n")) {
             System.out.println("Member tidak valid");
+            sc.close();
             return;
         }
         
@@ -54,6 +56,7 @@ public class Pemilihan2Percobaan2_22 {
             System.out.println("Anda menggunakan metode pembayaran QRIS. Potongan Rp 1.000 diberikan.");
         } else if (!metodePembayaran.equalsIgnoreCase("N")) {
             System.out.println("Metode pembayaran tidak valid. Hanya QRIS yang diterima.");
+            sc.close();
             return;
         }
         
